@@ -8,29 +8,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'primary-btn-color':'#F85559','primary-text-color':'#F85559','title-color':'#121212','para-color':'#12121299',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-btn-color': '#F85559', 'primary-text-color': '#F85559', 'title-color': '#121212', 'para-color': '#12121299',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <style>
-        .font-lato{
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
     </style>
     <title>Fruit Burst</title>
 </head>
 
-<body>
+<body class="font-lato">
+    <header>
+        <!-- Navbar section -->
+        <nav class="px-6 lg:py-12 lg:px-24">
+            <div class="navbar p-5 lg:bg-primary-btn-color justify-between lg:px-16 lg:py-6 rounded-full">
+                <div class="navbar-start hidden lg:block">
+                    <div class="text-lg font-medium lg:text-white text-primary-text-color">
+                        <ul class="flex gap-6">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center justify-between lg:justify-between gap-4">
+                    <img src="./images/logo.png" alt="" class="w-10 h-12">
+                    <a class=" normal-case text-4xl lg:text-white text-[#121212]">Fruit Burst</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="relative hidden lg:block">
+                        <div class="">
+                            <input type="search" name="" placeholder="Search here"
+                                class="pl-7 py-4 rounded-full w-[300px] h-[50px] bg-white">
+                        </div>
 
+                        <div class="absolute bottom-3 left-64">
+                            <img src="./images/search.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-bottom dropdown-end  lg:hidden">
+                        <label tabindex="0" class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
